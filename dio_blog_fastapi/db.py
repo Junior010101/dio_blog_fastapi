@@ -6,6 +6,9 @@ from sqlalchemy import MetaData, create_engine
 DATABASE_URL = getenv("DATABASE_URL", "sqlite+pysqlite:///./blog.sqlite")
 metadata = MetaData()
 
+class Base(DeclarativeBase):
+    metadata = metadata
+
 if getenv("RENDER"):
     engine = create_engine(
         DATABASE_URL,
