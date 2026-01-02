@@ -3,11 +3,7 @@ from datetime import datetime
 from sqlalchemy import DateTime, String
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 
-from dio_blog_fastapi import metadata
-
-
-class Base(DeclarativeBase):
-    metadata = metadata
+from dio_blog_fastapi import Base
 
 
 class Post(Base):
