@@ -12,7 +12,5 @@ class PostIn(BaseModel):
     )
 
 
-class PostUpdate(BaseModel):
+class PostUpdate(PostIn):
     titulo: str | None = None
-    publicado: bool | None = None
-    descricao: str | None = None
