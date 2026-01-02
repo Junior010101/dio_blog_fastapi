@@ -2,7 +2,6 @@ from os import getenv
 
 from databases import Database
 from sqlalchemy import MetaData, create_engine
-from sqlalchemy.orm import DeclarativeBase
 
 DATABASE_URL = getenv("DATABASE_URL", "sqlite+pysqlite:///./blog.sqlite")
 metadata = MetaData()
