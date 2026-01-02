@@ -23,4 +23,4 @@ api.include_router(auth_route)
 
 
 if __name__ == "__main__":
-    run("main:api", reload=True)
+    run("dio_blog_fastapi.main:api", reload=True)
