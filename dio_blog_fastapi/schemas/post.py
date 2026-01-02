@@ -6,7 +6,7 @@ from pydantic import BaseModel, Field
 class PostIn(BaseModel):
     titulo: str
     publicado: bool = False
-    descricao: str | None = None
+    descricao: str | None = ""
     criado_em: datetime = Field(
         default_factory=lambda: datetime.now(timezone.utc),
     )
