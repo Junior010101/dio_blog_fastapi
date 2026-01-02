@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from sqlalchemy import String
+from sqlalchemy import DateTime, String
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 
 from dio_blog_fastapi import metadata
@@ -30,5 +30,6 @@ class Post(Base):
         nullable=True,
     )
     criado_em: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True),
         nullable=False,
     )
