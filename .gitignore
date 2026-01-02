@@ -3,3 +3,7 @@ __pycache__/
 *.sqlite
 
 .pytest_cache/
+
+.vscode/
+launch.json
+settings.json
